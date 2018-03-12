@@ -44,10 +44,18 @@
 
     myChart.showLoading({
         text : "loading……",
-        effect : "bar",
+        effect : "bar",//'spin' | 'bar' | 'ring' | 'whirling' | 'dynamicLine' | 'bubble'
         textStyle : {
-            fontSize : 20
-        }
+            fontSize : 20,
+            color: 'blue',
+            decoration:	'none',
+            align:	'center',//水平对齐方式，可选为：'left' | 'right' | 'center'
+            baseline:'middle',//	垂直对齐方式，可选为：'top' | 'bottom' | 'middle'
+            fontFamily:	'Arial, Verdana, sans-serif',
+            fontStyle:	'normal',
+            fontWeight:	'normal'
+
+    }
     });
 
     clearTimeout(loadingTicket);
